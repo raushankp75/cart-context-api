@@ -14,8 +14,10 @@ const Cart = () => {
 
   return (
     <div>
-      <span>My Cart</span>
-      <p>Total: Rs {total}</p>
+      <div className='flex flex-row justify-between mx-16 my-10'>
+      <h1 className='text-3xl font-semibold'>My Cart</h1>
+      <p className='text-2xl'>Total : Rs {total}</p>
+      </div>
 
       <div className='grid md:grid-cols-4 grid-cols-1 gap-10 my-10 mx-16'>
           { cart.map((prod) => (
